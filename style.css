@@ -1,0 +1,265 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Font utama */
+    line-height: 1.6;
+    background-color: #e9ecef; /* Warna latar belakang yang lebih terang */
+    color: #343a40; /* Warna teks lebih gelap untuk kontras */
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #007bff; /* Warna utama navbar */
+    padding: 15px 20px; /* Padding ditambahkan */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s;
+}
+
+nav:hover {
+    background-color: #0056b3; /* Warna saat hover */
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Memusatkan semua konten dalam navbar */
+    flex-wrap: wrap;
+}
+
+.logo img {
+    height: 80px; /* Ukuran logo */
+    margin: 0 20px;
+}
+
+.navbar-title {
+    color: #fff;
+    font-size: 2.5em; /* Ukuran font yang lebih besar */
+    font-family: 'Raleway', sans-serif; /* Font baru untuk navbar */
+    text-align: center;
+    margin: 0 20px; /* Jarak antara logo dan judul */
+    flex-grow: 1;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 600; /* Menebalkan font untuk tautan */
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Warna hover yang lebih cerah */
+    text-shadow: 0 0 5px #fff;
+}
+
+/* Header */
+header {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px; /* Padding tambahan untuk header */
+    background: linear-gradient(45deg, #007bff, #00bfff); /* Gradien untuk latar belakang header */
+}
+
+header h1 {
+    font-size: 4.5em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Bayangan untuk teks */
+}
+
+header p {
+    font-size: 1.8em;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Bayangan untuk teks */
+}
+
+/* Mengatur ukuran gambar di carousel */
+.carousel-inner img {
+    max-height: 500px;
+    object-fit: cover;
+    width: 100%;
+    transition: transform 0.5s; /* Transisi pada gambar */
+}
+
+.carousel-inner img:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+    font-size: 2.5em;
+    text-transform: uppercase; /* Membuat judul menjadi uppercase */
+    letter-spacing: 1px; /* Spasi antar huruf */
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+    font-size: 2.5em;
+    width: 100%;
+    text-transform: uppercase; /* Membuat judul menjadi uppercase */
+    letter-spacing: 1px; /* Spasi antar huruf */
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: calc(30% - 40px);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card i {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #007bff; /* Warna ikon */
+}
+
+.service-card h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #343a40; /* Warna teks judul layanan */
+}
+
+.service-card p {
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+/* Footer */
+footer {
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffcc00; /* Warna hover untuk ikon sosial media */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        background: #007bff;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-active .nav-links {
+        left: 0;
+    }
+
+    header h1 {
+        font-size: 3.5em;
+    }
+
+    header p {
+        font-size: 1.4em;
+    }
+
+    .about, .services {
+        padding: 30px;
+    }
+
+    .service-card {
+        width: calc(100% - 40px);
+        margin-bottom: 20px;
+    }
+}
